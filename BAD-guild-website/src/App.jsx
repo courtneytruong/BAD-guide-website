@@ -1,6 +1,8 @@
-import "./App.css";
+import "./app.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./layouts/Layout";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Guides from "./pages/Guides";
@@ -8,11 +10,13 @@ import Guides from "./pages/Guides";
 export default function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/guides" element={<Guides />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/guides" element={<Guides />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 }
