@@ -5,7 +5,7 @@ import Layout from "./layouts/Layout";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Guides from "./pages/Guides";
+import GuideList from "./pages/GuideList";
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/guides" element={<Guides />} />
+          <Route path="/guides" element={<GuideList />} />
         </Routes>
       </Layout>
     </Router>
