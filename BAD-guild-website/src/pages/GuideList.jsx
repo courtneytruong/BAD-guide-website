@@ -1,4 +1,3 @@
-import React from "react";
 import guides from "../data/guides";
 import { VscBook } from "react-icons/vsc";
 import { Link } from "react-router-dom";

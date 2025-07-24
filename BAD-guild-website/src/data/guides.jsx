@@ -1,9 +1,13 @@
+import WhereDoIStart from "../components/WhereDoIStart";
+
 const guides = [
   {
     id: 1,
     title: "Where do I start? ",
     description:
       "New to End-Game Content and not sure where to begin? This one's for you.",
+    author: "Moony.8157",
+    component: WhereDoIStart,
     slug: "where-do-i-start",
   },
   {
