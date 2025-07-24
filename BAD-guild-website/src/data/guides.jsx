@@ -1,4 +1,5 @@
 import WhereDoIStart from "../components/WhereDoIStart";
+import HelpfulTools from "../components/HelpfulTools";
 
 const guides = [
   {
@@ -14,6 +15,8 @@ const guides = [
     id: 2,
     title: "Helpful Tools",
     description: "Various 3rd party websites to help in your journey.",
+    author: "Moony.8157",
+    component: HelpfulTools,
     slug: "helpful-tools",
   },
   {
