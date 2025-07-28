@@ -2,6 +2,8 @@ import WhereDoIStart from "../components/WhereDoIStart";
 import HelpfulTools from "../components/HelpfulTools";
 import PveGearAndBuilds from "../components/PveGearAndBuilds";
 import StrikeMissionGuides from "../components/StrikeMissionGuides";
+import Wing1and2Guide from "../components/Wing1and2Guide";
+import Wing3and4Guide from "../components/Wing3and4Guide";
 
 const guides = [
   {
@@ -42,12 +44,16 @@ const guides = [
     id: 5,
     title: "Wing 1 & 2 Guide",
     description: "Quick guides for raid wings 1 and 2.",
+    author: "Moony.8157",
+    component: Wing1and2Guide,
     slug: "wing-1-&-2-guide",
   },
   {
     id: 6,
     title: "Wing 3 & 4 Guide",
     description: "Quick guides for raid wings 3 and 4.",
+    author: "Moony.8157",
+    component: Wing3and4Guide,
     slug: "wing-3-&-4-guide",
   },
   {
