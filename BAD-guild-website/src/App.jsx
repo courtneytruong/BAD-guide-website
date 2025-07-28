@@ -6,6 +6,7 @@ import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import GuideList from "./pages/GuideList";
+import GuidePage from "./pages/GuidePage";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/guides" element={<GuideList />} />
+          <Route path="/guides/:slug" element={<GuidePage />} />
         </Routes>
       </Layout>
     </Router>

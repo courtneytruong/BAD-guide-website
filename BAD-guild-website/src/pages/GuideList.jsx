@@ -1,6 +1,6 @@
-import React from "react";
 import guides from "../data/guides";
 import { VscBook } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 export default function GuideList() {
   return (
@@ -13,9 +13,8 @@ export default function GuideList() {
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {guides.map((guide) => (
-          <a
-            key={guide.id}
-            href={guide.slug}
+          <Link
+            to={`/guides/${guide.slug}`}
             className="block rounded-2xl bg-red-900 hover:bg-red-800 shadow-sm transition-all duration-200 p-4"
           >
             <h2 className="text-lg font-semibold text-neutral-50">
@@ -24,7 +23,7 @@ export default function GuideList() {
             <p className="text-sm font-semibold text-neutral-300  mt-1">
               {guide.description}
             </p>
-          </a>
+          </Link>
         ))}
       </div>
     </main>
