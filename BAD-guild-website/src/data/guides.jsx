@@ -1,5 +1,7 @@
 import WhereDoIStart from "../components/WhereDoIStart";
 import HelpfulTools from "../components/HelpfulTools";
+import PveGearAndBuilds from "../components/PveGearAndBuilds";
+import StrikeMissionGuides from "../components/StrikeMissionGuides";
 
 const guides = [
   {
@@ -24,12 +26,16 @@ const guides = [
     title: "PVE Gear and Builds",
     description:
       "We only ask you to bring level 80 (exotic) gear, but here's some recommendations for different gear and builds.",
+    author: "Moony.8157",
+    component: PveGearAndBuilds,
     slug: "pve-gear-and-builds",
   },
   {
     id: 4,
     title: "Strike Mission Guides",
     description: "Quick, high-level guides to strike missions.",
+    author: "Moony.8157",
+    component: StrikeMissionGuides,
     slug: "strike-mission-guides",
   },
   {
