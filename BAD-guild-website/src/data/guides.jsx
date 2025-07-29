@@ -6,6 +6,8 @@ import Wing1and2Guide from "../components/Wing1and2Guide";
 import Wing3and4Guide from "../components/Wing3and4Guide";
 import Wing5Guide from "../components/Wing5Guide";
 import Wing7Guide from "../components/Wing7Guide";
+import CommandersSurvivalGuide from "../components/CommandersSurvivalGuide";
+import WvWGearAndBuilds from "../components/WvWGearAndBuilds";
 
 const guides = [
   {
@@ -79,12 +81,16 @@ const guides = [
     id: 9,
     title: "Commander's Survival Guide",
     description: "Guide for Commanding Raids",
+    author: "TheOGBaller",
+    component: CommandersSurvivalGuide,
     slug: "commanders-survival-guide",
   },
   {
     id: 10,
     title: "WvW Gear and Builds",
     description: "Quick Guide for WvW gear and Builds",
+    author: "Moony.8157",
+    component: WvWGearAndBuilds,
     slug: "wvw-gear-and-builds",
   },
   {
