@@ -4,6 +4,8 @@ import PveGearAndBuilds from "../components/PveGearAndBuilds";
 import StrikeMissionGuides from "../components/StrikeMissionGuides";
 import Wing1and2Guide from "../components/Wing1and2Guide";
 import Wing3and4Guide from "../components/Wing3and4Guide";
+import Wing5Guide from "../components/Wing5Guide";
+import Wing7Guide from "../components/Wing7Guide";
 
 const guides = [
   {
@@ -61,12 +63,16 @@ const guides = [
     title: "Wing 5 Guide",
     description:
       "An overview of mechanics and strategy for the Hall of Chains raid.",
+    author: "BorbyQ [BobDunkin.4510]",
+    component: Wing5Guide,
     slug: "wing-5-guide",
   },
   {
     id: 8,
     title: "Wing 7 Guide",
     description: "Quick guides for wing 7.",
+    author: "Moony.8157",
+    component: Wing7Guide,
     slug: "wing-7-guide",
   },
   {
