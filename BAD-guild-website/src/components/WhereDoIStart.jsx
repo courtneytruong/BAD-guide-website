@@ -72,12 +72,12 @@ export default function WhereDoIStart() {
         <li>
           Now you can move onto strikes, the first 10-person content where roles
           - such as dps, support (quickness and alacrity), and healers - become
-          essential.{" "}
+          essential.
         </li>
         <li>
           If you have access to Path of Fire, there's a series of simple strikes
           in Eye of the North that can be your first stop. Some of these strikes
-          are referred to as EZ3 because of how simple and easy they are.{" "}
+          are referred to as EZ3 because of how simple and easy they are.
         </li>
         <li>
           If you have End of Dragons, there are 4 strike missions available,
@@ -86,8 +86,11 @@ export default function WhereDoIStart() {
         </li>
         <li>All players also have access to Old Lion's Arch strike. </li>
         <li>
-          Need a quick run-down of strikes? See{" "}
-          <Link to={`/guides/strike-mission-guides`}>
+          Need a quick run-down of strikes? See
+          <Link
+            to={`/guides/strike-mission-guides`}
+            className="p-2 underline hover:text-red-800"
+          >
             Strike Mission Guides
           </Link>
         </li>
