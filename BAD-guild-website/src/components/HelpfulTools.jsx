@@ -1,92 +1,35 @@
+import helpfultoolslinks from "../data/helpfultoolslinks";
+
 export default function HelpfulTools() {
   return (
-    <div>
-      <h2>Wiki</h2>
-      <ul>
-        <li>
-          <a href="https://wiki.guildwars2.com/wiki/Main_Page">
-            Guild Wars 2 Official Wiki
-          </a>
-        </li>
-        <li>
-          <a href="https://wiki.guildwars2.com/wiki/Event_timers">
-            Event Timers
-          </a>
-        </li>
-        <li>
-          <a href="https://wiki.guildwars2.com/wiki/Abbreviations">
-            Abbreviation Meanings
-          </a>
-        </li>
-      </ul>
-      <h2>Account Information</h2>
-      <ul>
-        <li>
-          <a href="https://www.gw2efficiency.com/">GW2Efficiency</a> provides
-          stats and info on your entire account to browse: including unlocked
-          skins, achievements, crafting, characters, builds and gear, bank,
-          guilds.
-        </li>
-        <li>
-          <a href="https://gw2est.com/maps">Every Single Thing.</a> ready to
-          unlock everything? This tells you what you're missing from different
-          areas.{" "}
-        </li>
-      </ul>
-      <h2>Overlays and Add-ons</h2>
-      <ul>
-        <li>
-          <a href="https://blishhud.com/">Blish HUD</a>- an overlay with many
-          useful modules: paths for quick map completion, jumping puzzles,
-          markers for achievements and boss fights, meta-event alerts, fishing
-          tools, even a shortcut to dodge-jump
-        </li>
-        <li>
-          <a href="http://www.gw2taco.com/">GW2 TacO</a> - markers and overlays
-          to help with map completion, achievements, etc.
-        </li>
-        <li>
-          <a href="https://github.com/gw2-addon-loader/GW2-Addon-Manager">
-            GW2 Addon Manager
-          </a>
-          - easy way to install and manage arcdps, boon table, radial mount, and
-          others
-        </li>
-        <li>
-          <a href="https://www.deltaconnected.com/arcdps/">arcDPS</a> - see your
-          average DPS
-        </li>
-      </ul>
-      <h2>Crafting</h2>
-      <ul>
-        <li>
-          <a href="https://gw2crafts.net/">Gw2Crafts</a> - guides to level up
-          your crafting professions, from 0 to max level, either the fastest or
-          the cheapest way.
-        </li>
-        <li>
-          <a href="https://www.gw2lunchbox.com/ProvisionerHelper.html ">
-            Provisioner tokens
-          </a>
-          - the cheapest weapons/armor to craft to exchange for Provisioner
-          Tokens (legendary equipment)
-        </li>
-      </ul>
-      <h2>Miscellaneous</h2>
-      <ul>
-        <li>
-          <a href="https://fast.farming-community.eu/">Fast Farming</a> - tons
-          of info about different areas to farm, converting currencies for
-          money, research notes, and more.
-        </li>
-        <li>
-          <a href="https://docs.google.com/spreadsheets/d/1Bhzxj6T1bc83UGMwtr_B4A_UoCxIqugoYVjNSwlcsVc/edit#gid=275775758">
-            Fishing Guide
-          </a>
-          - a spreadsheet to help get all the fish you need at different
-          locations and times
-        </li>
-      </ul>
+    <div className="max-w-6xl mx-auto px-4 py-10">
+      {helpfultoolslinks.map((section) => (
+        <div key={section.category} className="mb-10">
+          <h2 className="text-2xl font-semibold mb-4 text-black text-center">
+            {section.category}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            {section.links.map((link) => (
+              <div
+                key={link.title}
+                className="block rounded-2xl bg-red-900 hover:bg-red-800 shadow-sm transition-all duration-200 p-4"
+              >
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-semibold text-neutral-50"
+                >
+                  {link.title}
+                </a>
+                <p className="text-sm text-neutral-50 mt-2">
+                  {link.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
