@@ -6,7 +6,7 @@ export default function GuidePage() {
   const guide = guides.find((g) => g.slug === slug);
 
   if (!guide) {
-    return <div>Guide not found! 🫨</div>;
+    return <div>Guide not found!</div>;
   }
 
   const GuideComponent = guide.component;
