@@ -14,7 +14,7 @@ export default function GuidePage() {
   return (
     <div className="bg-neutral-50 rounded-2xl my-10 p-4 sm:p-6 md:p-8 max-w-6xl mx-auto text-black">
       <div className="text-center mb-5">
-        <h1 className="text-6xl text-shadow-lg/20 font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-600 to-black">
+        <h1 className="text-6xl text-shadow-lg/20 font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-600 to-black pb-3">
           {guide.title}
         </h1>
         <p className="text-2xl mt-2 font-bold">{guide.description}</p>
