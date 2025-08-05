@@ -707,6 +707,110 @@ export default function StrikeMissionGuides() {
               </li>
             </ul>
           </section>
+          {/* Cosmic Observatory */}
+          <section id="Cosmic Observatory">
+            <h2 className="text-2xl font-bold mb-4">
+              Cosmic Observatory - Secrets of the Obscure
+            </h2>
+            <ul className="list-disc">
+              <li>
+                If you get a target over your head and notice a green arrow
+                moving with you,8 get behind your allies. Everyone else stand on
+                the green arrow.
+              </li>
+              <li>Watch for pizza slices, dont stand in the orange slices.</li>
+              <li>
+                If you get targeted by Soul Feast kite it out of the group.
+                Everyone else can use the two orbs light around the arena to
+                stop Soul Feast. Target the soul feast and then throw it to stop
+                it.
+              </li>
+              <li>
+                Getting hit by pizza slices or Soul Feast will stack a debuff on
+                you. 10 stacks will make you hostile and taunted to your other
+                squad members. CC your hostile friend to make them sane again or
+                let them go down you do you.
+              </li>
+              <li>
+                If you see a pizza and its pushing you away from the center go
+                with it. Kill adds to get rid of wind and be able to go back to
+                boss
+              </li>
+              <li>
+                Dagda really likes spread mechanics, because she hates melee
+                players. Don't overlap your friends circle with your circle.
+              </li>
+              <li>
+                CC her defiance bars. If you don't she will do massive damage
+                that is likely to wipe your squad.
+              </li>
+              <li>
+                Bring projectile reflects or blocks since she uses alot of
+                projectile attacks
+              </li>
+              <li>Red is bad get out of it.</li>
+            </ul>
+          </section>
+          {/* Temple of Febe */}
+          <section id="Temple of Febe">
+            <h2 className="text-2xl font-bold mb-4">
+              Temple of Febe - Secrets of the Obscure
+            </h2>
+            <h3 className="font-semibold">Basic Mechanics</h3>
+            <ul className="list-disc mb-4">
+              <li>
+                Failing most of the below mechanics causes Cerus to gain stacks
+                of Empowered. Empowered is bad do not try to reach a high score.
+              </li>
+              <li>
+                CC all defiance bars. Failing will cause boss regain health.
+              </li>
+              <li>
+                Bring green circles to group. Stack green circles on group if
+                there are more then one.
+              </li>
+              <li>
+                The spread mechanic for this boss will leave behind an aoe
+                circle on the ground after it goes off. Do not overlap friends
+                and move away from the boss. Leaving circles under the boss will
+                give you less room to fight and do other mechanics.
+              </li>
+              <li>
+                If you see a large arrow on the ground step to the left of it.
+                This will spawn a wall that corrupts boons. It will rotate
+                around the boss. Dont get hit by it.
+              </li>
+              <li>
+                If you see a message pop on the screen saying "that your malice
+                is being drawn out" and the edges of your screen turn white move
+                away from the group and run towards the edge of the platform.
+                This will spawn a clone of yourself. This clone must be killed
+                before it makes it back to the boss.
+              </li>
+              <li>
+                If you see orbs moving towards the boss from the edge of the
+                platform run through orbs to gather them. Dont let the boss eat
+                them.
+              </li>
+              <li>
+                He will keep doing all of these mechanics over and over until
+                the fight ends.
+              </li>
+            </ul>
+
+            <h3 className="font-semibold">Split Phase</h3>
+            <ul className="list-disc mb-4">
+              <li>Split phases occur at 80% and 50%</li>
+              <li>
+                Cerus will split up into facets of himself. Killing two facets
+                will end the phase and Cerus will reform in the center.
+              </li>
+              <li>
+                Prioritise killing the large Despair {"->"} Malice and Envy{" "}
+                {"->"}Rage during split to avoid their Empowered facets.
+              </li>
+            </ul>
+          </section>
         </main>
       </div>
     </div>
