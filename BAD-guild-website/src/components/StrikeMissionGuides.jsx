@@ -1,4 +1,5 @@
 import { VscDebugBreakpointLog } from "react-icons/vsc";
+import BackToTopButton from "./BackToTopButton";
 
 const navLinks = [
   { id: "Shiverpeaks Pass", label: "Shiverpeaks Pass" },
@@ -813,6 +814,7 @@ export default function StrikeMissionGuides() {
           </section>
         </main>
       </div>
+      <BackToTopButton />
     </div>
   );
 }
