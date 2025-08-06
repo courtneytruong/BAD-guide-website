@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaDiscord } from "react-icons/fa";
 
 export default function Navbar() {

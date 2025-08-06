@@ -1,39 +1,14 @@
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 import BackToTopButton from "./BackToTopButton";
-
-const navLinks = [
-  { id: "Shiverpeaks Pass", label: "Shiverpeaks Pass" },
-  { id: "Fraenir of Jormag", label: "Fraenir of Jormag" },
-  { id: "Voice and Claw", label: "Voice and Claw" },
-  { id: "Whisper of Jormag", label: "Whisper of Jormag" },
-  { id: "Boneskinner", label: "Boneskinner" },
-  { id: "Cold War", label: "Cold War" },
-  { id: "Aetherblade Hideout", label: "Aetherblade Hideout" },
-  { id: "Xunlai Jade Junkyard", label: "Xunlai Jade Junkyard" },
-  { id: "Kaineng Overlook", label: "Kaineng Overlook" },
-  { id: "Harvest Temple", label: "Harvest Temple" },
-  { id: "Old Lion's Court", label: "Old Lion's Court" },
-  { id: "Cosmic Observatory", label: "Cosmic Observatory" },
-  { id: "Temple of Febe", label: "Temple of Febe" },
-];
+import MobileTopNavBar from "./MobileTopNavBar";
+import navLinks from "../data/StrikeGuideNavLinks";
 
 export default function StrikeMissionGuides() {
   return (
     <div className="min-h-screen">
-      {/* Mobile Top Navbar */}
-      <nav className="md:hidden sticky top-0 bg-gradient-to-r from-red-900 to-black text-neutral-50 overflow-x-auto whitespace-nowrap flex gap-4 px-4 py-2">
-        {navLinks.map((link) => (
-          <a
-            key={link.id}
-            href={`#${link.id}`}
-            className="shrink-0 hover:text-neutral-300 transition"
-          >
-            <span className="flex items-center gap-x-2">
-              <VscDebugBreakpointLog /> {link.label}
-            </span>
-          </a>
-        ))}
-      </nav>
+      <div>
+        <MobileTopNavBar navLinks={navLinks} />
+      </div>
 
       <div className="flex">
         {/* Sticky Sidebar for Desktop */}
