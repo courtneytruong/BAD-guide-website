@@ -1,6 +1,7 @@
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 import BackToTopButton from "./BackToTopButton";
 import MobileTopNavBar from "./MobileTopNavBar";
+import SideBarNav from "./SideBarNav";
 import navLinks from "../data/StrikeGuideNavLinks";
 
 export default function StrikeMissionGuides() {
@@ -11,134 +12,7 @@ export default function StrikeMissionGuides() {
       </div>
 
       <div className="flex">
-        {/* Sticky Sidebar for Desktop */}
-        <aside className="hidden md:block w-64 h-screen sticky top-0 p-6 bg-gradient-to-b from-red-900 to-black rounded-l-lg overflow-y-auto">
-          <h2 className="pb-4 font-semibold text-neutral-50">
-            Icebrood Saga Strikes
-          </h2>
-          <nav className="pl-4 space-y-4">
-            <a
-              href="#Shiverpeaks Pass"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Shiverpeaks Pass
-              </span>
-            </a>
-            <a
-              href="#Fraenir of Jormag"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Fraenir of Jormag
-              </span>
-            </a>
-            <a
-              href="#Voice and Claw"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Voice and Claw
-              </span>
-            </a>
-            <a
-              href="#Whisper of Jormag"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Whisper of Jormag
-              </span>
-            </a>
-            <a
-              href="#Boneskinner"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Boneskinner
-              </span>
-            </a>
-            <a
-              href="#Cold War"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Cold War
-              </span>
-            </a>
-          </nav>
-
-          <h2 className="py-4 font-semibold text-neutral-50">
-            End of Dragons Strikes
-          </h2>
-          <nav className="pl-4 space-y-4">
-            <a
-              href="#Aetherblade Hideout"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Aetherblade Hideout
-              </span>
-            </a>
-            <a
-              href="#Xunlai Jade Junkyard"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Xunlai Jade Junkyard
-              </span>
-            </a>
-            <a
-              href="#Kaineng Overlook"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Kaineng Overlook
-              </span>
-            </a>
-            <a
-              href="#Harvest Temple"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Harvest Temple
-              </span>
-            </a>
-          </nav>
-
-          <h2 className="py-4 font-semibold text-neutral-50">Core Game</h2>
-          <nav className="pl-4 space-y-4">
-            <a
-              href="#Old Lion's Court"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Old Lion's Court
-              </span>
-            </a>
-          </nav>
-
-          <h2 className="py-4 font-semibold text-neutral-50">
-            Secrets of the Obscure
-          </h2>
-          <nav className="pl-4 space-y-4">
-            <a
-              href="#Cosmic Observatory"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Cosmic Observatory
-              </span>
-            </a>
-            <a
-              href="#Temple of Febe"
-              className="block text-neutral-50 hover:text-neutral-300 transition"
-            >
-              <span className="flex items-center gap-x-2">
-                <VscDebugBreakpointLog /> Temple of Febe
-              </span>
-            </a>
-          </nav>
-        </aside>
+        <SideBarNav navLinks={navLinks} />
 
         {/* Main Content */}
         {/* Shiverpeaks Pass */}
