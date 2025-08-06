@@ -7,9 +7,7 @@ import navLinks from "../data/StrikeGuideNavLinks";
 export default function StrikeMissionGuides() {
   return (
     <div className="min-h-screen">
-      <div>
-        <MobileTopNavBar navLinks={navLinks} />
-      </div>
+      <MobileTopNavBar navLinks={navLinks} />
 
       <div className="flex">
         <SideBarNav navLinks={navLinks} />
