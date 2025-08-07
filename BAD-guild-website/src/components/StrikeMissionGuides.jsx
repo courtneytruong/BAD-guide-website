@@ -1,7 +1,7 @@
 import BackToTopButton from "./BackToTopButton";
 import MobileTopNavBar from "./MobileTopNavBar";
 import SideBarNav from "./SideBarNav";
-import navLinks from "../data/StrikeGuideNavLinks";
+import navLinks from "../data/strikeguidenavlinks";
 import GuideRenderer from "./GuideRenderer";
 import StrikeMissionGuidesText from "../data/strikeguidecontent";
 
