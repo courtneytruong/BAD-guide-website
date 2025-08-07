@@ -3,18 +3,21 @@ const navLinks = [
   {
     header: "Wing 1",
     links: [
-      { id: "Vale Guardian", label: "Vale Guardian" },
-      { id: 'Second "Boss" Event Stuff', label: 'Second "Boss" Event Stuff' },
-      { id: "Gorseval", label: "Gorseval" },
-      { id: "Sabetha", label: "Sabetha" },
+      { id: "Wing 1 - Vale Guardian", label: "Vale Guardian" },
+      {
+        id: 'Wing 1 - Second "Boss" Event Stuff',
+        label: 'Second "Boss" Event Stuff',
+      },
+      { id: "Wing 1 - Gorseval", label: "Gorseval" },
+      { id: "Wing 1 - Sabetha", label: "Sabetha" },
     ],
   },
   {
     header: "Wing 2",
     links: [
-      { id: "Slothasor", label: "Slothasor" },
-      { id: "Bandit Trio", label: "Bandit Trio" },
-      { id: "Matthias", label: "Matthias" },
+      { id: "Wing 2 - Slothasor", label: "Slothasor" },
+      { id: "Wing 2 - Bandit Trio", label: "Bandit Trio" },
+      { id: "Wing 2 - Matthias", label: "Matthias" },
     ],
   },
 ];
