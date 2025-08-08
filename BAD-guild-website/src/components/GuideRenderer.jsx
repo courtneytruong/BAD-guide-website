@@ -1,29 +1,59 @@
 //renders guide content using data file.
 
+import GuideImage from "./GuideImage";
+
 export default function GuideRenderer({ guide }) {
   return (
     <article>
       {guide.sections.map((section, index) => (
         <div key={index} id={section.header} className="mb-10 scroll-mt-24">
+          {/* Section Header */}
           <h2 className="text-2xl font-bold mb-2">{section.header}</h2>
 
-          {section.body?.map((para, i) => (
-            <p
-              key={i}
-              className="mb-2"
-              dangerouslySetInnerHTML={{ __html: para }}
-            />
-          ))}
+          {/* Paragraph Body + Images */}
+          {section.body?.map((para, i) => {
+            if (typeof para === "object" && para.type === "image") {
+              return (
+                <GuideImage
+                  key={i}
+                  src={para.src}
+                  alt={para.alt}
+                  caption={para.caption}
+                />
+              );
+            }
+            return (
+              <p
+                key={i}
+                className="mb-2"
+                dangerouslySetInnerHTML={{ __html: para }}
+              />
+            );
+          })}
 
+          {/* Main List + Images */}
           {section.list && (
             <ul className="list-disc list-inside space-y-1 mt-2">
-              {section.list.map((item, i) => (
-                <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
-              ))}
+              {section.list.map((item, i) => {
+                if (typeof item === "object" && item.type === "image") {
+                  return (
+                    <li key={i} className="list-none">
+                      <GuideImage
+                        src={item.src}
+                        alt={item.alt}
+                        caption={item.caption}
+                      />
+                    </li>
+                  );
+                }
+                return (
+                  <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+                );
+              })}
             </ul>
           )}
 
-          {/* Subsections support */}
+          {/* Subsections */}
           {section.subSections?.map((sub, subIndex) => (
             <div
               key={subIndex}
@@ -32,12 +62,25 @@ export default function GuideRenderer({ guide }) {
             >
               <h3 className="text-xl font-semibold mb-2">{sub.subHeader}</h3>
 
-              {/* Render bullet list if any */}
+              {/* Subsection List + Images */}
               {sub.list?.length > 0 && (
                 <ul className="list-disc list-inside ml-5 space-y-1">
-                  {sub.list.map((item, i) => (
-                    <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
-                  ))}
+                  {sub.list.map((item, i) => {
+                    if (typeof item === "object" && item.type === "image") {
+                      return (
+                        <li key={i} className="list-none">
+                          <GuideImage
+                            src={item.src}
+                            alt={item.alt}
+                            caption={item.caption}
+                          />
+                        </li>
+                      );
+                    }
+                    return (
+                      <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
+                    );
+                  })}
                 </ul>
               )}
             </div>

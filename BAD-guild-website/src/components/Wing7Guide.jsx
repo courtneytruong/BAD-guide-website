@@ -1,5 +1,5 @@
-import SabirTornadoPattern from "../assets/images/SabirTornadoPattern.png";
-import FirePlacement from "../assets/images/FirePlacement.png";
+// import SabirTornadoPattern from "../assets/images/SabirTornadoPattern.png";
+// import FirePlacement from "../assets/images/FirePlacement.png";
 
 export default function Wing7Guide() {
   return (
@@ -144,13 +144,13 @@ export default function Wing7Guide() {
             it) you will be downed. Be careful with the large tornado here.
           </li>
           <li>Tornado patterns: </li>
-          <div className="p-4">
+          {/* <div className="p-4">
             <img
               src={SabirTornadoPattern}
               alt="Sabir Tornado Pattern"
               className="w-full max-w-md mx-auto rounded-lg shadow-md"
             />
-          </div>
+          </div> */}
         </ul>
       </div>
       <div>
@@ -205,13 +205,13 @@ export default function Wing7Guide() {
             moving back to the middle of the arena Qadim will charge another
             shockwave and reclaim the remaining pylon(s). Those need to be CC'd
             and the remaining kiter(s) resume their job.
-            <div className="p-4">
+            {/* <div className="p-4">
               <img
                 src={FirePlacement}
                 alt="Qadim Fire Placement Strategy"
                 className="w-full max-w-md mx-auto rounded-lg shadow-md"
               />
-            </div>
+            </div> */}
           </li>
         </ul>
         <p>Tank</p>

@@ -55,6 +55,12 @@ const wing3And4Content = {
         "At 50%, glide south and then clockwise to each tower and kill crystals. Go fast or the towers may disappear and wipe you.",
         "Back to near center of platform to fight. After walls no north-west.",
         "5 people will be teleported away to clear a tower. It will be one of the mechanics you've already learned, clear quickly and you'll go back to Xera.",
+        {
+          type: "image",
+          src: "/images/XeraTank.png",
+          alt: "Xera Tanking Guide",
+          caption: "Map courtesy of GW2 Wiki",
+        },
       ],
     },
     {

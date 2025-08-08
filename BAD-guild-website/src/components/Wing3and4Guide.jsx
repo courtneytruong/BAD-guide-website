@@ -1,4 +1,3 @@
-import XeraTank from "../assets/images/XeraTank.png";
 import navLinks from "../data/wing3and4navlinks";
 import wing3And4Content from "../data/wing3and4content";
 import GuideRenderer from "./GuideRenderer";
