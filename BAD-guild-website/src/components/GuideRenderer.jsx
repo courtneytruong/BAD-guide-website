@@ -8,15 +8,17 @@ export default function GuideRenderer({ guide }) {
           <h2 className="text-2xl font-bold mb-2">{section.header}</h2>
 
           {section.body?.map((para, i) => (
-            <p key={i} className="mb-2">
-              {para}
-            </p>
+            <p
+              key={i}
+              className="mb-2"
+              dangerouslySetInnerHTML={{ __html: para }}
+            />
           ))}
 
           {section.list && (
             <ul className="list-disc list-inside space-y-1 mt-2">
               {section.list.map((item, i) => (
-                <li key={i}>{item}</li>
+                <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
               ))}
             </ul>
           )}
@@ -34,7 +36,7 @@ export default function GuideRenderer({ guide }) {
               {sub.list?.length > 0 && (
                 <ul className="list-disc list-inside ml-5 space-y-1">
                   {sub.list.map((item, i) => (
-                    <li key={i}>{item}</li>
+                    <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
                   ))}
                 </ul>
               )}
