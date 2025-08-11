@@ -2,11 +2,11 @@ import WhereDoIStart from "../components/WhereDoIStart";
 import HelpfulTools from "../components/HelpfulTools";
 import PveGearAndBuilds from "../components/PveGearAndBuilds";
 import StrikeMissionGuides from "../components/StrikeMissionGuides";
-import Wing1and2Guide from "../components/Wing1and2Guide";
+import Wing1Guide from "../components/Wing1Guide";
+import Wing2Guide from "../components/Wing2Guide";
 import Wing3and4Guide from "../components/Wing3and4Guide";
 import Wing5Guide from "../components/Wing5Guide";
 import Wing7Guide from "../components/Wing7Guide";
-import CommandersSurvivalGuide from "../components/CommandersSurvivalGuide";
 import WvWGearAndBuilds from "../components/WvWGearAndBuilds";
 
 const guides = [
@@ -46,14 +46,22 @@ const guides = [
   },
   {
     id: 5,
-    title: "Wing 1 & 2 Guide",
-    description: "Quick guides for raid wings 1 and 2.",
+    title: "Wing 1 Guide",
+    description: "A Quick guide for Spirit Vale (raid wing 1).",
     author: "Moony.8157",
-    component: Wing1and2Guide,
-    slug: "wing-1-&-2-guide",
+    component: Wing1Guide,
+    slug: "wing-1-guide",
   },
   {
     id: 6,
+    title: "Wing 2 Guide",
+    description: "A Quick guide for raid wing 2.",
+    author: "Moony.8157",
+    component: Wing2Guide,
+    slug: "wing-2-guide",
+  },
+  {
+    id: 7,
     title: "Wing 3 & 4 Guide",
     description: "Quick guides for raid wings 3 and 4.",
     author: "Moony.8157",
@@ -61,7 +69,7 @@ const guides = [
     slug: "wing-3-&-4-guide",
   },
   {
-    id: 7,
+    id: 8,
     title: "Wing 5 Guide",
     description:
       "An overview of mechanics and strategy for the Hall of Chains raid.",
@@ -70,20 +78,12 @@ const guides = [
     slug: "wing-5-guide",
   },
   {
-    id: 8,
+    id: 9,
     title: "Wing 7 Guide",
     description: "Quick guides for wing 7.",
     author: "Moony.8157",
     component: Wing7Guide,
     slug: "wing-7-guide",
-  },
-  {
-    id: 9,
-    title: "Commander's Survival Guide",
-    description: "Guide for Commanding Raids",
-    author: "TheOGBaller",
-    component: CommandersSurvivalGuide,
-    slug: "commanders-survival-guide",
   },
   {
     id: 10,
@@ -95,26 +95,20 @@ const guides = [
   },
   {
     id: 11,
-    title: "All Special Roles/Jobs for Raids",
-    description: "A brief summary of all special roles/jobs for all raids.",
-    slug: "all-special-roles-jobs-for-raids",
-  },
-  {
-    id: 12,
     title: "Wing 8 Guide",
     description:
       "An overview of mechanics and strategy for the Mount Balrior raid.",
     slug: "wing-8-guide",
   },
   {
-    id: 13,
+    id: 12,
     title: "Event Bot Tutorial",
     description:
       "An overview of how to get started using RTI bot for guild events",
     slug: "event-bot-tutorial",
   },
   {
-    id: 14,
+    id: 13,
     title: "Guild Guide",
     description: "An overview of the guild discord",
     slug: "guild-guide",
