@@ -25,14 +25,6 @@ export default function Wing1and2Guide() {
                 Mukluk's Raid Wing 1: Spirit Vale Guide
               </a>
             </p>
-            <p>
-              <a
-                className="underline hover:text-red-800"
-                href="https://mukluklabs.com/gw2wing2"
-              >
-                Mukluk's Raid Wing 2: Salvation Pass Guide
-              </a>
-            </p>
           </section>
         </main>
       </div>

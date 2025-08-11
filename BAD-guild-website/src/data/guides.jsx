@@ -47,7 +47,7 @@ const guides = [
   {
     id: 5,
     title: "Wing 1 Guide",
-    description: "A Quick guide for raid wing 1.",
+    description: "A Quick guide for Spirit Vale (raid wing 1).",
     author: "Moony.8157",
     component: Wing1Guide,
     slug: "wing-1-guide",
