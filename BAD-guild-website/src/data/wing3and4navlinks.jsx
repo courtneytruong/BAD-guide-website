@@ -1,5 +1,4 @@
 //page navigation link ids and labels for wing 3 and 4 guide.
-//need to replace wing 1/2 stuff with 3/4 links.
 const navLinks = [
   {
     header: "Wing 3",
