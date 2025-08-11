@@ -79,14 +79,6 @@ const guides = [
   },
   {
     id: 9,
-    title: "Commander's Survival Guide",
-    description: "Guide for Commanding Raids",
-    author: "TheOGBaller",
-    component: CommandersSurvivalGuide,
-    slug: "commanders-survival-guide",
-  },
-  {
-    id: 10,
     title: "WvW Gear and Builds",
     description: "Quick Guide for WvW gear and Builds",
     author: "Moony.8157",
@@ -94,27 +86,21 @@ const guides = [
     slug: "wvw-gear-and-builds",
   },
   {
-    id: 11,
-    title: "All Special Roles/Jobs for Raids",
-    description: "A brief summary of all special roles/jobs for all raids.",
-    slug: "all-special-roles-jobs-for-raids",
-  },
-  {
-    id: 12,
+    id: 10,
     title: "Wing 8 Guide",
     description:
       "An overview of mechanics and strategy for the Mount Balrior raid.",
     slug: "wing-8-guide",
   },
   {
-    id: 13,
+    id: 11,
     title: "Event Bot Tutorial",
     description:
       "An overview of how to get started using RTI bot for guild events",
     slug: "event-bot-tutorial",
   },
   {
-    id: 14,
+    id: 12,
     title: "Guild Guide",
     description: "An overview of the guild discord",
     slug: "guild-guide",
