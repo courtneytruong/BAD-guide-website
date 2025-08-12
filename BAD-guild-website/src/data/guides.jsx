@@ -9,6 +9,7 @@ import Wing5Guide from "../components/Wing5Guide";
 import Wing7Guide from "../components/Wing7Guide";
 import WvWGearAndBuilds from "../components/WvWGearAndBuilds";
 import Wing8Guide from "../components/wing8guide";
+import GuildGuide from "../components/GuildGuide";
 
 const guides = [
   {
@@ -112,8 +113,9 @@ const guides = [
   },
   {
     id: 13,
-    title: "Guild Guide",
+    title: "Guild Discord Guide",
     description: "An overview of the guild discord",
+    component: GuildGuide,
     slug: "guild-guide",
   },
   // Add more guides here as needed
