@@ -10,6 +10,7 @@ import Wing7Guide from "../components/Wing7Guide";
 import WvWGearAndBuilds from "../components/WvWGearAndBuilds";
 import Wing8Guide from "../components/wing8guide";
 import GuildGuide from "../components/GuildGuide";
+import EventBotTutorial from "../components/EventBotTutorial";
 
 const guides = [
   {
@@ -109,12 +110,15 @@ const guides = [
     title: "Event Bot Tutorial",
     description:
       "An overview of how to get started using RTI bot for guild events",
+    component: EventBotTutorial,
+    author: "Moony.8157",
     slug: "event-bot-tutorial",
   },
   {
     id: 13,
     title: "Guild Discord Guide",
     description: "An overview of the guild discord",
+    author: "BAD Moderator Team",
     component: GuildGuide,
     slug: "guild-guide",
   },
