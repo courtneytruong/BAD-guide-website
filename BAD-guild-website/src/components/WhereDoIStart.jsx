@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function WhereDoIStart() {
   return (
-    <div>
+    <div className="border-2 border-solid p-2">
       <p className="mb-2">
         In this guild, you're welcome to start anywhere. Pick an event and join
         up! All we ask is that you have yourself geared up for level 80 with

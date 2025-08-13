@@ -1,6 +1,6 @@
 export default function PveGearAndBuilds() {
   return (
-    <div>
+    <div className="border-2 border-solid p-2">
       <h2 className="text-2xl font-bold">What Character Should I Play?</h2>
       <p className="pb-3">
         Play the character you like the best. You will do more for your group

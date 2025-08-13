@@ -2,7 +2,7 @@ import { VscDebugBreakpointLog } from "react-icons/vsc";
 
 export default function SideBarNav({ navLinks }) {
   return (
-    <aside className="hidden md:block w-64 h-screen sticky top-0 p-6 bg-gradient-to-b from-red-900 to-black rounded-l-lg overflow-y-auto">
+    <aside className="hidden md:block w-64 h-screen sticky top-0 p-6 bg-gradient-to-b from-red-900 to-black overflow-y-auto">
       {navLinks.map((section) => (
         <div key={section.header}>
           <h2 className="py-4 font-semibold text-neutral-50">

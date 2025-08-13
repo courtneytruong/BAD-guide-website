@@ -11,7 +11,7 @@ export default function EventBotTutorial() {
       <MobileTopNavBar navLinks={navLinks} />
       <div className="flex ">
         <SideBarNav navLinks={navLinks} />
-        <main className="flex-1 p-10 space-y-10">
+        <main className="flex-1 border-2 border-solid p-10 space-y-10">
           <GuideRenderer guide={EventBotTutorialContent} />
         </main>
       </div>

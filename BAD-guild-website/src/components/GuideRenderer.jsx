@@ -1,5 +1,5 @@
 //renders guide content using data file.
-
+import { VscDebugBreakpointLog } from "react-icons/vsc";
 import GuideImage from "./GuideImage";
 
 export default function GuideRenderer({ guide }) {
@@ -8,7 +8,12 @@ export default function GuideRenderer({ guide }) {
       {guide.sections.map((section, index) => (
         <div key={index} id={section.header} className="mb-10 scroll-mt-24">
           {/* Section Header */}
-          <h2 className="text-2xl font-bold mb-2">{section.header}</h2>
+          <h2 className="justify-items-center text-2xl rounded-xl font-bold mb-2 items-center border-2 bg-gradient-to-r from-red-900 via-red-900 to-black text-white border-solid p-2">
+            <span className="flex items-center gap-x-2">
+              <VscDebugBreakpointLog /> {section.header}
+              <VscDebugBreakpointLog />
+            </span>
+          </h2>
 
           {/* Paragraph Body + Images */}
           {section.body?.map((para, i) => {
@@ -60,7 +65,12 @@ export default function GuideRenderer({ guide }) {
               id={sub.subHeader}
               className="mt-6 scroll-mt-20"
             >
-              <h3 className="text-xl font-semibold mb-2">{sub.subHeader}</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                <span className="flex items-center gap-x-2">
+                  <VscDebugBreakpointLog />
+                  {sub.subHeader}
+                </span>
+              </h3>
 
               {/* Subsection List + Images */}
               {sub.list?.length > 0 && (
