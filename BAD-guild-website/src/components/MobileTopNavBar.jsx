@@ -3,7 +3,7 @@ import { VscDebugBreakpointLog } from "react-icons/vsc";
 export default function MobileTopNavBar({ navLinks }) {
   const flatLinks = navLinks.flatMap((section) => section.links);
   return (
-    <nav className="md:hidden sticky top-0 z-50 bg-gradient-to-r from-red-900 to-black text-neutral-50 overflow-x-auto whitespace-nowrap flex gap-4 px-4 py-2">
+    <nav className="md:hidden sticky top-0 z-50 bg-black text-neutral-50 overflow-x-auto whitespace-nowrap flex gap-4 px-4 py-2">
       {flatLinks.map((link) => (
         <a
           key={link.id}

@@ -1,8 +1,8 @@
 export default function WvWGearAndBuilds() {
   return (
-    <div>
+    <div className="border-2 border-solid p-2">
       <div>
-        <h2 className="text-2xl font-bold pb-3">
+        <h2 className="text-2xl font-bold pb-3 ">
           Why should I have a different build for WvW?
         </h2>
         <p className="pb-3">

@@ -2,7 +2,7 @@ import helpfultoolslinks from "../data/helpfultoolslinks";
 
 export default function HelpfulTools() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10">
+    <div className="max-w-6xl mx-auto px-4 py-10 border-2 border-solid p-2">
       {helpfultoolslinks.map((section) => (
         <div key={section.category} className="mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-black text-center">

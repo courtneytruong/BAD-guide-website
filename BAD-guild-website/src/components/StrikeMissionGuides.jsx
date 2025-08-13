@@ -15,7 +15,7 @@ export default function StrikeMissionGuides() {
 
         {/* Main Content */}
         {/* Shiverpeaks Pass */}
-        <main className="flex-1 p-10 space-y-10">
+        <main className="flex-1 border-2 border-solid p-10 space-y-10">
           <GuideRenderer guide={StrikeMissionGuidesText} />
         </main>
       </div>
