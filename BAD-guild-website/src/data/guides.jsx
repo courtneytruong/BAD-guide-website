@@ -21,6 +21,7 @@ const guides = [
     author: "Moony.8157",
     component: WhereDoIStart,
     slug: "where-do-i-start",
+    category: "General",
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ const guides = [
     author: "Moony.8157",
     component: HelpfulTools,
     slug: "helpful-tools",
+    category: "General",
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ const guides = [
     author: "Moony.8157",
     component: PveGearAndBuilds,
     slug: "pve-gear-and-builds",
+    category: "General",
   },
   {
     id: 4,
@@ -46,6 +49,7 @@ const guides = [
     author: "Moony.8157",
     component: StrikeMissionGuides,
     slug: "strike-mission-guides",
+    category: "Instanced PvE",
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ const guides = [
     author: "Moony.8157",
     component: Wing1Guide,
     slug: "wing-1-guide",
+    category: "Instanced PvE",
   },
   {
     id: 6,
@@ -62,6 +67,7 @@ const guides = [
     author: "Moony.8157",
     component: Wing2Guide,
     slug: "wing-2-guide",
+    category: "Instanced PvE",
   },
   {
     id: 7,
@@ -70,6 +76,7 @@ const guides = [
     author: "Moony.8157",
     component: Wing3and4Guide,
     slug: "wing-3-&-4-guide",
+    category: "Instanced PvE",
   },
   {
     id: 8,
@@ -79,6 +86,7 @@ const guides = [
     author: "BorbyQ [BobDunkin.4510]",
     component: Wing5Guide,
     slug: "wing-5-guide",
+    category: "Instanced PvE",
   },
   {
     id: 9,
@@ -87,6 +95,7 @@ const guides = [
     author: "Moony.8157",
     component: Wing7Guide,
     slug: "wing-7-guide",
+    category: "Instanced PvE",
   },
   {
     id: 10,
@@ -95,6 +104,7 @@ const guides = [
     author: "Moony.8157",
     component: WvWGearAndBuilds,
     slug: "wvw-gear-and-builds",
+    category: "WvW",
   },
   {
     id: 11,
@@ -104,6 +114,7 @@ const guides = [
     component: Wing8Guide,
     author: "BorbyQ [BobDunkin.4510]",
     slug: "wing-8-guide",
+    category: "Instanced PvE",
   },
   {
     id: 12,
@@ -113,6 +124,7 @@ const guides = [
     component: EventBotTutorial,
     author: "Moony.8157",
     slug: "event-bot-tutorial",
+    category: "BAD Guild",
   },
   {
     id: 13,
@@ -121,6 +133,7 @@ const guides = [
     author: "BAD Moderator Team",
     component: GuildGuide,
     slug: "guild-guide",
+    category: "BAD Guild",
   },
   // Add more guides here as needed
 ];
