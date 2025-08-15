@@ -1,10 +1,6 @@
 const EventBotTutorialContent = {
   sections: [
     {
-      header:
-        "We are using RTI Bot to create events in BAD. To get started, please follow the steps below:",
-    },
-    {
       header: "Important!",
       list: [
         'RTI Bot is currently set to Pacific Coast Time. In <a href="https://discord.com/channels/996154539617030296/1251183929969610775">event coordination</a> you need to use the command "/account preferences timezone" to set your personal timezone, otherwise you will need to do the math to convert the timing to PST.',

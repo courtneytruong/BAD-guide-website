@@ -1,6 +1,7 @@
 import { FaDiscord } from "react-icons/fa";
 import { VscBook } from "react-icons/vsc";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -17,25 +18,32 @@ export default function Home() {
           or continue raids, strikes, fractals, dungeons, WvW, and whatever else
           you want to do. Experience is never required.
         </p>
+
         <div className="flex flex-col items-center space-y-4">
-          <button className="bg-red-900 text-white hover:bg-red-800 font-semibold py-3 px-6 rounded-xl shadow-md transition">
-            <span className="flex items-center space-x-2">
-              <FaDiscord size={30} /> <span>Join Our Discord</span>
-            </span>
-          </button>
-          <button className="bg-red-900 text-white hover:bg-red-800 font-semibold py-3 px-6 rounded-xl shadow-md transition">
-            <span className="flex items-center space-x-2">
-              <VscBook size={30} /> <span>View Our Guides</span>
-            </span>
-          </button>
-          <button className="bg-red-900 text-white hover:bg-red-800 text-white font-semibold py-3 px-6 rounded-xl shadow-md transition">
-            <span className="flex items-center space-x-2">
-              <span>About the Guild</span>
-              <span>
-                <FaArrowRightLong size={30} />
+          <a href="https://discord.gg/epRvBWQ4vr">
+            <button className="bg-red-900 text-white hover:bg-red-800 font-semibold py-3 px-6 rounded-xl shadow-md transition">
+              <span className="flex items-center space-x-2">
+                <FaDiscord size={30} /> <span>Join Our Discord</span>
               </span>
-            </span>
-          </button>
+            </button>
+          </a>
+          <Link to="/guides">
+            <button className="bg-red-900 text-white hover:bg-red-800 font-semibold py-3 px-6 rounded-xl shadow-md transition">
+              <span className="flex items-center space-x-2">
+                <VscBook size={30} /> <span>View Our Guides</span>
+              </span>
+            </button>
+          </Link>
+          <Link to="/about">
+            <button className="bg-red-900 text-white hover:bg-red-800 text-white font-semibold py-3 px-6.5 rounded-xl shadow-md transition">
+              <span className="flex items-center space-x-2">
+                <span>About the Guild</span>
+                <span>
+                  <FaArrowRightLong size={30} />
+                </span>
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

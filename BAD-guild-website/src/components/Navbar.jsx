@@ -9,7 +9,9 @@ export default function Navbar() {
       {/* TOP BAR */}
       <div className=" mx-auto px-4 flex items-center justify-between h-20">
         {/*  - always visible */}
-        <div className="text-4xl font-bold text-white">BAD</div>
+        <div className="text-4xl font-bold text-white">
+          <a href="/">BAD</a>
+        </div>
 
         {/*  Mobile menu button */}
         <div className="md:hidden">
@@ -28,14 +30,11 @@ export default function Navbar() {
         <div className=" text-xl hidden md:flex items-center justify-between w-full px-4">
           {/* Left side: Logo + Links */}
           <div className="flex items-center justify-between space-x-3">
-            <a href="/" className="hover:text-neutral-300 transition">
-              Home
-            </a>
             <a href="/guides" className="hover:text-neutral-300 transition">
               Guides
             </a>
             <a href="/about" className="hover:text-neutral-300 transition">
-              About
+              About Us
             </a>
           </div>
 
@@ -65,10 +64,10 @@ export default function Navbar() {
             Home
           </a>
           <a href="/guides" className="block hover:text-neutral-300">
-            All Guides
+            Guides
           </a>
           <a href="/about" className="block hover:text-neutral-300">
-            About
+            About Us
           </a>
           <a
             href="https://discord.gg/epRvBWQ4vr"
