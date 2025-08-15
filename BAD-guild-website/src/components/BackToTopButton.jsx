@@ -26,7 +26,7 @@ export default function BackToTopButton() {
   };
 
   return (
-    <div className="sticky bottom-4 flex justify-end px-4">
+    <div className="sticky bottom-4 flex justify-end py-2 px-4">
       {isVisible && (
         <button
           onClick={scrollToTop}
