@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FaDiscord } from "react-icons/fa";
-import { Link } from "react-router-dom"; // swap with Next.js Link if that's what you use
-import guides from "../data/guides"; // 👈 adjust the path to wherever your guides file lives
+import { IoSearchOutline } from "react-icons/io5";
+import { Link } from "react-router-dom"; // swap with Next.js Link if needed
+import guides from "../data/guides"; // adjust path to your guides
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
+  const desktopSearchRef = useRef(null);
+  const mobileSearchRef = useRef(null);
 
   // Filtering logic
   const filteredGuides = guides.filter(
@@ -16,10 +19,26 @@ export default function Navbar() {
       guide.category.toLowerCase().includes(query.toLowerCase())
   );
 
+  // Close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        desktopSearchRef.current &&
+        !desktopSearchRef.current.contains(event.target) &&
+        mobileSearchRef.current &&
+        !mobileSearchRef.current.contains(event.target)
+      ) {
+        setQuery("");
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <nav className="bg-gradient-to-r from-red-900 to-black text-white shadow-md relative">
       {/* TOP BAR */}
-      <div className=" mx-auto px-4 flex items-center justify-between h-20">
+      <div className="mx-auto px-4 flex items-center justify-between h-20">
         {/* Logo */}
         <div className="text-4xl font-bold text-white">
           <a href="/">BAD</a>
@@ -39,7 +58,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop menu */}
-        <div className=" text-xl hidden md:flex items-center justify-between w-full px-4">
+        <div className="text-xl hidden md:flex items-center justify-between w-full px-4">
           {/* Left side: Links */}
           <div className="flex items-center justify-between space-x-3">
             <a href="/guides" className="hover:text-neutral-300 transition">
@@ -61,17 +80,19 @@ export default function Navbar() {
               <FaDiscord size={30} />
             </a>
 
-            {/* Search Input */}
-            <div className="relative w-64">
+            {/* Desktop Search */}
+            <div className="relative w-64" ref={desktopSearchRef}>
+              <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+                <IoSearchOutline className="text-gray-400" size={20} />
+              </div>
               <input
                 type="text"
-                placeholder="Search site..."
+                placeholder="Search"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="w-full px-3 py-1 rounded bg-black border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neutral-400"
+                className="w-full pl-10 px-3 py-1 rounded bg-black border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neutral-400"
               />
 
-              {/* Dropdown Results */}
               {query && (
                 <ul className="absolute top-full left-0 mt-2 w-full bg-neutral-900 rounded-lg shadow-lg border border-gray-700 max-h-64 overflow-y-auto z-50">
                   {filteredGuides.length > 0 ? (
@@ -100,7 +121,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* 📱 Mobile dropdown */}
+      {/* Mobile dropdown */}
       {isOpen && (
         <div className="md:hidden bg-gradient-to-r from-red-900 to-black px-4 py-4 space-y-3">
           <a href="/" className="block hover:text-neutral-300">
@@ -124,13 +145,16 @@ export default function Navbar() {
           </a>
 
           {/* Mobile Search */}
-          <div className="relative w-full">
+          <div className="relative w-full" ref={mobileSearchRef}>
+            <div className="absolute inset-y-0 left-3 top-2 flex items-center pointer-events-none">
+              <IoSearchOutline className="text-gray-400" size={20} />
+            </div>
             <input
               type="text"
-              placeholder="Search site..."
+              placeholder="Search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="w-full px-3 py-1 mt-2 rounded bg-black border text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full pl-10 px-3 py-1 mt-2 rounded bg-black border text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
             />
 
             {query && (
