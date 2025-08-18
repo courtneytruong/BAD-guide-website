@@ -91,7 +91,7 @@ const guides = [
   {
     id: 9,
     title: "Wing 7 Guide",
-    description: "Quick guides for wing 7.",
+    description: "Quick guides for raid wing 7.",
     author: "Moony.8157",
     component: Wing7Guide,
     slug: "wing-7-guide",
