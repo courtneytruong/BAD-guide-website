@@ -20,13 +20,13 @@ const navLinks = [
         id: "Help with Commanding (credit: TheOGBaller)",
         label: "General Tips",
       },
-      { id: "Commanding Vale Guardian", label: "Vale Guardian" },
+      { id: "Commanding Vale Guardian", label: "Commanding Vale Guardian" },
       {
         id: "Commanding Spirit Woods",
-        label: "Spirit Woods",
+        label: "Commanding Spirit Woods",
       },
-      { id: "Commanding Gorseval", label: "Gorseval" },
-      { id: "Commanding Sabetha", label: "Sabetha" },
+      { id: "Commanding Gorseval", label: "Commanding Gorseval" },
+      { id: "Commanding Sabetha", label: "Commanding Sabetha" },
     ],
   },
 ];
