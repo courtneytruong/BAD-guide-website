@@ -19,7 +19,7 @@ export default function Wing3and4Guide() {
 
             <p>
               <a
-                className="underline hover:text-red-800"
+                className="underline text-red-900 hover:text-red-700"
                 href="https://mukluklabs.com/gw2wing3"
               >
                 Mukluk's Raid Wing 3: Stronghold of the Faithful Guide.
@@ -27,7 +27,7 @@ export default function Wing3and4Guide() {
             </p>
             <p>
               <a
-                className="underline hover:text-red-800"
+                className="underline text-red-900 hover:text-red-700"
                 href="https://mukluklabs.com/gw2wing4"
               >
                 Mukluk's Raid Wing 4: Bastion of the Penitent Guide.

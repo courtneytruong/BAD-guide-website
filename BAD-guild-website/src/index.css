@@ -24,6 +24,17 @@ body {
   width: 100vw
 }
 
+.guide-content a {
+  color: #7F1D1D;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.guide-content a:hover {
+  color: #B91C1C;
+  font-weight: 600;
+  text-decoration: underline;
+}
 
 html {
   scroll-behavior: smooth;

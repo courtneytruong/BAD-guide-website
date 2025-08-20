@@ -18,7 +18,7 @@ export default function Wing2Guide() {
             <h2 className="text-2xl font-bold mb-4">Visual Learners</h2>
             <p>
               <a
-                className="underline hover:text-red-800"
+                className="underline text-red-900 hover:text-red-700"
                 href="https://mukluklabs.com/gw2wing2"
               >
                 Mukluk's Raid Wing 2: Salvation Pass Guide

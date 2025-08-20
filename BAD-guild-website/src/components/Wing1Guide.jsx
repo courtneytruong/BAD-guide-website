@@ -19,7 +19,7 @@ export default function Wing1and2Guide() {
 
             <p>
               <a
-                className="underline hover:text-red-800"
+                className="underline text-red-900 hover:text-red-700"
                 href="https://mukluklabs.com/gw2wing1"
               >
                 Mukluk's Raid Wing 1: Spirit Vale Guide

@@ -19,7 +19,7 @@ export default function Wing7Guide() {
 
             <p>
               <a
-                className="underline hover:text-red-800"
+                className="underline text-red-900 hover:text-red-700"
                 href="https://mukluklabs.com/gw2wing7"
               >
                 Mukluk's Raid Wing 7: Key of Ahdashim
