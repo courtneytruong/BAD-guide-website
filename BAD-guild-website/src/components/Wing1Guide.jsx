@@ -1,4 +1,4 @@
-import navLinks from "../data/wing1Navlinks";
+import navLinks from "../data/wing1navlinks";
 import SideBarNav from "./SideBarNav";
 import MobileTopNavBar from "./MobileTopNavBar";
 import BackToTopButton from "./BackToTopButton";
