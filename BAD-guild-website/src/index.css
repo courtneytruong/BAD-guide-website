@@ -40,6 +40,13 @@ html {
   scroll-behavior: smooth;
 }
 
+:focus {
+  outline: none !important;
+}
+
+:not(input):not(textarea):not([contenteditable="true"]) {
+  caret-color: transparent !important;
+}
 
 
 @media (prefers-color-scheme: light) {
