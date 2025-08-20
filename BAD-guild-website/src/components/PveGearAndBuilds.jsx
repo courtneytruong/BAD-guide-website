@@ -47,7 +47,7 @@ export default function PveGearAndBuilds() {
         <li>
           <a
             href="https://hardstuck.gg/"
-            className="p-2 underline hover:text-red-800"
+            className="p-2 underline text-red-900 hover:text-red-700"
           >
             Hardstuck
           </a>
@@ -55,7 +55,7 @@ export default function PveGearAndBuilds() {
         <li>
           <a
             href="https://snowcrows.com/builds"
-            className="p-2 underline hover:text-red-800"
+            className="p-2 underline text-red-900 hover:text-red-700"
           >
             SnowCrows
           </a>
@@ -63,7 +63,7 @@ export default function PveGearAndBuilds() {
         <li>
           <a
             href="https://metabattle.com/"
-            className="p-2 underline hover:text-red-800"
+            className="p-2 underline text-red-900 hover:text-red-700"
           >
             Metabattle
           </a>
@@ -71,7 +71,7 @@ export default function PveGearAndBuilds() {
         <li>
           <a
             href="https://guildjen.com/builds/"
-            className="p-2 underline hover:text-red-800"
+            className="p-2 underline text-red-900 hover:text-red-700"
           >
             GuildJen
           </a>

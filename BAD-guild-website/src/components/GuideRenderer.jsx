@@ -4,7 +4,7 @@ import GuideImage from "./GuideImage";
 
 export default function GuideRenderer({ guide }) {
   return (
-    <article>
+    <article className="guide-content">
       {guide.sections.map((section, index) => (
         <div key={index} id={section.header} className="mb-10 scroll-mt-24">
           {/* Section Header */}

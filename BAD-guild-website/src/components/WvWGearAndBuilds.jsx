@@ -30,7 +30,7 @@ export default function WvWGearAndBuilds() {
         <ul className="list-disc list-inside text-left mb-2 pb-3">
           <li>
             <a
-              className="underline hover:text-red-800"
+              className="underline text-red-900 hover:text-red-700"
               href="https://gw2mists.com/builds"
             >
               GW2 Mists
@@ -38,7 +38,7 @@ export default function WvWGearAndBuilds() {
           </li>
           <li>
             <a
-              className="underline hover:text-red-800"
+              className="underline text-red-900 hover:text-red-700"
               href="https://metabattle.com/wiki/WvW"
             >
               Metabattle
@@ -46,7 +46,7 @@ export default function WvWGearAndBuilds() {
           </li>
           <li>
             <a
-              className="underline hover:text-red-800"
+              className="underline text-red-900 hover:text-red-700"
               href="https://guildjen.com/wvw-builds/"
             >
               Guildjen
@@ -54,7 +54,7 @@ export default function WvWGearAndBuilds() {
           </li>
           <li>
             <a
-              className="underline hover:text-red-800"
+              className="underline text-red-900 hover:text-red-700"
               href="https://metabattle.com/wiki/WvW_Roaming"
             >
               Metabattle Roaming Builds
@@ -62,7 +62,7 @@ export default function WvWGearAndBuilds() {
           </li>
           <li>
             <a
-              className="underline hover:text-red-800"
+              className="underline text-red-900 hover:text-red-700"
               href="https://snowcrows.com/builds/wvw"
             >
               SnowCrows
