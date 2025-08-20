@@ -22,3 +22,5 @@ This app is a very simple font-end only website. Individual Guide pages are usin
 - vite for dev environment.
 
 ## Demo Link
+
+https://the-bad-guild.netlify.app/guides
