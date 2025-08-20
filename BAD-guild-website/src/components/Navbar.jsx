@@ -124,9 +124,6 @@ export default function Navbar() {
       {/* Mobile dropdown */}
       {isOpen && (
         <div className="md:hidden bg-gradient-to-r from-red-900 to-black px-4 py-4 space-y-3">
-          <a href="/" className="block hover:text-neutral-300">
-            Home
-          </a>
           <a href="/guides" className="block hover:text-neutral-300">
             Guides
           </a>
