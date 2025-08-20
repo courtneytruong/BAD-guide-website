@@ -8,7 +8,7 @@ import Wing3and4Guide from "../components/Wing3and4Guide";
 import Wing5Guide from "../components/Wing5Guide";
 import Wing7Guide from "../components/Wing7Guide";
 import WvWGearAndBuilds from "../components/WvWGearAndBuilds";
-import Wing8Guide from "../components/wing8guide";
+import Wing8Guide from "../components/Wing8";
 import GuildGuide from "../components/GuildGuide";
 import EventBotTutorial from "../components/EventBotTutorial";
 
