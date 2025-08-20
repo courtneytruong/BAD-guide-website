@@ -61,12 +61,12 @@ export default function Navbar() {
         <div className="text-xl hidden md:flex items-center justify-between w-full px-4">
           {/* Left side: Links */}
           <div className="flex items-center justify-between space-x-3">
-            <a href="/guides" className="hover:text-neutral-300 transition">
+            <Link to="/guides" className="hover:text-neutral-300 transition">
               Guides
-            </a>
-            <a href="/about" className="hover:text-neutral-300 transition">
+            </Link>
+            <Link to="/about" className="hover:text-neutral-300 transition">
               About Us
-            </a>
+            </Link>
           </div>
 
           {/* Right side: Discord + Search */}
@@ -124,12 +124,12 @@ export default function Navbar() {
       {/* Mobile dropdown */}
       {isOpen && (
         <div className="md:hidden bg-gradient-to-r from-red-900 to-black px-4 py-4 space-y-3">
-          <a href="/guides" className="block hover:text-neutral-300">
+          <Link to="/guides" className="block hover:text-neutral-300">
             Guides
-          </a>
-          <a href="/about" className="block hover:text-neutral-300">
+          </Link>
+          <Link to="/about" className="block hover:text-neutral-300">
             About Us
-          </a>
+          </Link>
           <a
             href="https://discord.gg/epRvBWQ4vr"
             target="_blank"
